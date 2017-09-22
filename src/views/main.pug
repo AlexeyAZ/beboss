@@ -1,0 +1,85 @@
+extends templates/layout
+
+block vars
+    - var title = 'Main'
+
+block content
+    section.content
+        div.container.container_main
+            div.content__intro.ta-center.color.color_white
+                p.text.text_xl.
+                    Поставь ссылку на БИБОСС
+                p.title.title_xl.content__intro-title.
+                    Заработай баллы!
+            div.content__big-img
+                img(src="img/mac.png", alt="")
+                a.content__big-img-link(href="").
+                    Франшиза Dunkin’ Donuts на БИБОСС
+            div.content__text
+                p.text.text_m.
+                    БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из ссылок:
+                ul.content__list
+                    li.content__list-item.
+                        Текстовая ссылка «Франшиза <span class="color color_text-gray">[Название]</span> на БИБОСС»
+                    li.content__list-item.
+                        Текстовая ссылка «Наша франшиза на БИБОСС»
+                    li.content__list-item.
+                        Кнопка “Нравится франшиза” + счетчик популярности
+                div.content__info-block
+                    p.text.text_m.
+                        Зачем нужны <a href="">баллы</a>?
+                    p.text.text_l.
+                        Больше баллов — выше позиция в выдаче категории
+                div.content__col-block
+                    div.content__col-block-item.content__col-block-item_width_50
+                        p.text.text_l.
+                            Правила размещения ссылки
+                        ul.content__list.content__list_var_2
+                            li.content__list-item.
+                                Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt;)
+                            li.content__list-item.
+                                Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта,
+                            li.content__list-item.
+                                Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу,
+                            li.content__list-item.
+                                При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.
+                    div.content__col-block-item.content__col-block-item_width_50
+                        p.text.text_l.mb-10.
+                            Стоимость ссылки
+                        p.title.title_l.color.color_green.
+                            200 баллов
+                        p.text.text_m.mb-20.
+                            ТиЦ Вашего сайта от 10
+                        p.title.title_l.color.color_green.
+                            50 баллов
+                        p.text.text_m.
+                            ТиЦ Вашего сайта от 0 до 10
+                div.content__info-block.content__info-block_form
+                    p.title.title_m.mb-10.ta-center.tt-uppercase.
+                            Получить ссылку
+                    form.content__form
+                        div.content__form-row
+                            div.content__form-col.content__form-col_text
+                                p.text.text_s.
+                                    Ваше имя
+                            div.content__form-col.content__form-col_input
+                                input.content__input(type="text" placeholder="Представьтесь, пожалуйста")
+                        div.content__form-row
+                            div.content__form-col.content__form-col_text
+                                p.text.text_s.
+                                    Номер телефона
+                            div.content__form-col.content__form-col_input
+                                input.content__input.content__input_phone(type="text" placeholder="Для начисления баллов и связи с Вами")
+                        div.content__form-row
+                            div.content__form-col.content__form-col_text
+                                p.text.text_s.
+                                    Название франшизы
+                            div.content__form-col.content__form-col_input
+                                input.content__input.content__input_franshize(type="text" placeholder="Например, Subway")
+                        div.content__form-row
+                            div.content__form-col.content__form-col_text
+                            div.content__form-col.content__form-col_btn
+                                button.content__btn.
+                                    Получить ссылку
+                p.text.text_m.
+                    <span class="title title_s">Это еще не все...</span> Вы можете заработать дополнительные баллы, если разместите на своём сайте новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на новость!
